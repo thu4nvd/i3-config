@@ -1,18 +1,18 @@
-# TxGVNN <txgvnn@gmail.com>
+# ThuanVD <thuanvd@outlook.com>
 # i3 version 4.13 (2016-11-08)
 # Name the wordspaces
 # xprop to check window
 # xmodmap [ --pke ] view keymap
-set $tag1 "1 "
+set $tag3 "3 "
 set $tag2 "2 "
-set $tag3 "3 "
+set $tag1 "1 "
 set $tag4 "4 "
 set $tag5 "5 "
 set $tag6 "6 "
 set $tag7 "7 "
 set $tag8 "8 "
 set $tag9 "9 "
-set $tag0 "Zero "
+set $tag0 "0 "
 
 # i3 config file (v4)
 #
@@ -24,7 +24,7 @@ set $mod Mod4
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 12
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -186,9 +186,10 @@ bar {
 #	status_command i3status -c ~/.i3/i3status.conf
 	status_command ~/.i3/bin/conky-i3bar
 	font pango:DejaVu Sans Mono, FontAwesome 8
-	tray_output eDP1
-#	tray_output primary
+#	tray_output eDP1
+	tray_output primary
 	position top
+#	position bottom
 #	font pango:Terminus 8
 	colors {
 		background #202020
@@ -232,8 +233,8 @@ exec --no-startup-id xautolock -time 5 -locker '~/.i3/bin/i3lock.sh'
 #exec --no-startup-id wicd-gtk
 
 # Assign workspace
-assign [class="Keepassx"] $tag0
-assign [class="Skype"] $tag1
+#assign [class="Keepassx"] $tag0
+assign [class="Skype"] $tag3
 
 # Screenshot
 bindsym Print exec scrot 'scrot_%Y-%m-%d-%T_$wx$h.png' -e 'mv $f ~/Pictures/'

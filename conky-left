@@ -38,11 +38,14 @@ use_spacer yes
 TEXT
 ${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font GE Inspira:pixelsize=58}${offset -148}${time %A}${font}
 ${voffset +20}${font DejaVu Sans Mono:pixelsize=10}${color 535C5C}
-  _____ ${color de6839} _    ${color 535C5C} __    _      _      _
-   | |  ${color de6839}\ \_/ ${color 535C5C}/ /`_ \ \  / | |\ | | |\ |
-   |_|  ${color de6839}/_/ \ ${color 535C5C}\_\_/  \_\/  |_| \| |_| \|
+ ______   __  __     __  __     ______     __   __    
+/\__  _\ /\ \_\ \   /\ \/\ \   /\  __ \   /\ "-.\ \   
+\/_/\ \/ \ \  __ \  \ \ \_\ \  \ \  __ \  \ \ \-.  \  
+   \ \_\  \ \_\ \_\  \ \_____\  \ \_\ \_\  \ \_\\"\_\ 
+    \/_/   \/_/\/_/   \/_____/   \/_/\/_/   \/_/ \/_/ 
+
 ${color 5a715c}
-  [ @author TxGVNN ]
+  [ @author Thuan ]
 
 ${font DejaVu Sans Mono:pixelsize=10}${color 00A0A0}
 ${exec gxt cat logs/$(date +%Y-%m-%d)}
